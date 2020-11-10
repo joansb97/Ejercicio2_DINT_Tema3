@@ -6,8 +6,28 @@
         xmlns:local="clr-namespace:Ejercicio2_DINT_Tema3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Border" x:Key="miBorde">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="CornerRadius" Value="3"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Width" Value="130"/>
+        </Style>
+        <Style TargetType="WrapPanel">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
     <StackPanel>
-        <Border Margin="10" BorderBrush="Black" BorderThickness="3" CornerRadius="3">
+        <Border Style="{StaticResource miBorde}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
@@ -15,17 +35,17 @@
                         <GradientStop Color="Yellow" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Text="Los Angeles Lakers" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center"/>
+                <TextBlock Text="Los Angeles Lakers"/>
                 <WrapPanel HorizontalAlignment="Center">
-                    <Image Source="3_lakers.png" Height="100" Width="130" />
-                    <Image Source="9_lakers.png" Height="100" Width="130"/>
-                    <Image Source="14_lakers.png" Height="100" Width="130"/>
-                    <Image Source="23_lakers.png" Height="100" Width="130"/>
-                    <Image Source="39_lakers.png" Height="100" Width="130"/>
+                    <Image Source="3_lakers.png"/>
+                    <Image Source="9_lakers.png"/>
+                    <Image Source="14_lakers.png"/>
+                    <Image Source="23_lakers.png"/>
+                    <Image Source="39_lakers.png"/>
                 </WrapPanel>
             </StackPanel>
         </Border>
-        <Border Margin="10" BorderBrush="Black" BorderThickness="3" CornerRadius="3">
+        <Border Style="{StaticResource miBorde}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
@@ -33,13 +53,13 @@
                         <GradientStop Color="Red" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Text="Miami Heat" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center"/>
+                <TextBlock Text="Miami Heat"/>
                 <WrapPanel HorizontalAlignment="Center">
-                    <Image Source="7_heat.png" Height="100" Width="130"/>
-                    <Image Source="13_heat.png" Height="100" Width="130"/>
-                    <Image Source="14_heat.png" Height="100" Width="130"/>
-                    <Image Source="22_heat.png" Height="100" Width="130"/>
-                    <Image Source="99_heat.png" Height="100" Width="130"/>
+                    <Image Source="7_heat.png"/>
+                    <Image Source="13_heat.png"/>
+                    <Image Source="14_heat.png"/>
+                    <Image Source="22_heat.png"/>
+                    <Image Source="99_heat.png"/>
                 </WrapPanel>
             </StackPanel>
         </Border>
